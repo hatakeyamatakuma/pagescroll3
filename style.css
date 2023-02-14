@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* 使用PC MAC */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+h1, h2{
+  margin: 30px;
+  text-align: center;
+}
+
+#header {
+  margin-top: 400px;
+}
+
+#main {
+  margin: 400px 0;
+}
+
+.flex {
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex__title {
+  font-size: 2rem;
+  transition: all 1s;
+}
+
+.flex__box {
+  width: 450px;
+  overflow: hidden;
+}
+
+.flex__box__img {
+  width: 450px;
+  height: 300px;
+  transform: scale(1.0,1.0);
+  transition: all 1s;
+}
+
+.flex__box__img.active {
+  transform: scale(1.2,1.2)
+}
+
+.flex__title.active {
+  transform: translate(20px,50px);
+}
