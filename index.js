@@ -11,11 +11,11 @@ $(function(){
 
 function active(className){
   //imgの位置を取得
-  let position = $(className).offset().top;
+  const position = $(className).offset().top;
   //スクロールの量を取得
-  let scroll = $(window).scrollTop();
+  const scroll = $(window).scrollTop();
   //windowの高さを取得
-  let windowHeight = $(window).height();
+  const windowHeight = $(window).height();
   if(scroll > position - windowHeight + 300 && scroll > position - windowHeight + 500){
     $(className).addClass("active");
   }else{
